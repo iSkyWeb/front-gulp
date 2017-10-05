@@ -1,0 +1,42 @@
+*, *::before, *::after
+  box-sizing: border-box
+
+html
+  -webkit-font-smoothing: antialiased
+  font-size: 16px
+  font-family: 'Helvetica Neue', Helvetica, sans-serif
+  line-height: 16px
+  text-rendering: optimizeLegibility
+  direction: ltr // should be always set for sites with rtl support, cuz rtl gulp plugin could not set it automatically sometimes
+
+img
+  flex-shrink: 0
+  max-width: 100%
+
+a
+  text-decoration: none
+  transition: color .3s ease
+
+ul
+  padding: 0
+  margin: 0
+
+  li
+    list-style: none
+
+.list-inline
+  display: flex
+
+.bold
+  font-weight: 700
+
+input, button, textarea
+  -webkit-appearance: none
+  -webkit-text-size-adjust: none
+
+  &:focus
+    outline: 0 none
+
+@media #{$tablet}
+  html
+    text-rendering: optimizeSpeed

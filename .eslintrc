@@ -1,0 +1,8 @@
+/**
+  Use needed config from eslint-config directory
+    @param standard.js - use standard rules (https://standardjs.com/rules.html), less strict rules than airbnb sets up
+    @param airbnb.js - modified airbnb config with some custom rules (https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+*/
+{
+  "extends": "./eslint-config/airbnb.js"
+}

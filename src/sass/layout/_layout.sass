@@ -1,0 +1,52 @@
+.container
+  width: $w12
+  margin: 0 auto
+
+[class^='col']
+  flex-shrink: 0
+
+.col-2
+  width: $w2
+
+.col-3
+  width: $w3
+
+.col-4
+  width: $w4
+
+.col-6
+  width: $w6
+
+.col-8
+  width: $w8
+
+.col-9
+  width: $w9
+
+.col-25
+  width: 25%
+
+@media #{$desktop-s}
+  .container
+    width: 100%
+
+  [class^='col']
+    flex-shrink: 0
+
+  .col-2
+    width: $w2
+
+  .col-3
+    width: 302px
+
+  .col-4
+    width: 336px
+
+  .col-6
+    width: $w6
+
+  .col-8
+    width: $w8
+
+  .col-9
+    width: 76%

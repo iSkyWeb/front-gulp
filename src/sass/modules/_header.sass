@@ -1,0 +1,170 @@
+.header
+  // Common styles in header section
+  .container
+    display: flex
+
+  .header-right-b
+    width: 872px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  .user-actions-b
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  // Top blue block
+  .top-b
+    background: $blue
+
+    a
+      color: #fff
+
+    .lang-switcher a, .login-link // change color on hover only for non-logged links and lang-switcher
+
+      &:hover
+        color: $orange
+
+    .header-right-b
+      margin-left: -16px // custom margin and width to align text on one line with that padding at active point ( http://prntscr.com/g2xm44 )
+      width: 872 + 16px
+
+  .lang-switcher
+
+    li
+      margin-right: 16px
+      padding: 16px
+
+      &.active
+        background: $dark-blue
+        pointer-events: none
+
+  .login-link
+    margin-right: 32px
+
+    &:last-child
+      margin: 0
+
+  // notification bell, not 8px-grid dimensions
+  .notify-b
+    padding: 13px 16px 13px 8px
+    display: flex
+    align-items: center
+    transition: background .3s ease
+    margin: 0 8px
+
+    &:hover
+      background: $dark-blue
+
+    .number
+      display: inline-block
+      border: 2px solid $blue
+      padding: 0 4px
+      font-size: 14px
+      font-weight: 700
+      border-radius: 8px
+      line-height: 18px
+      height: 22px
+      text-align: center
+      color: #fff
+      background: $orange
+      position: relative
+      margin-left: -8px
+      transition: all .3s ease
+
+
+  // user info and dropdown menu
+  .user-menu__w
+    position: relative
+
+    &:hover
+      .user-info
+        background: $dark-blue
+
+      .user-menu
+        max-height: 200px // here should be the number of menu height for smoothly animation. Or it could be any big number
+
+  .user-info
+    display: flex
+    align-items: center
+    padding: 8px 8px 8px 16px
+    cursor: pointer
+    transition: background .3s ease
+
+    .name
+      color: #fff
+      padding: 0 24px 0 16px
+      position: relative
+      max-width: calc(100% - 32px)
+
+      &::after
+        content: '⏷'
+        position: absolute
+        right: 0
+        top: 0
+        bottom: 0
+        height: 16px
+        margin: auto
+
+  .user-menu
+    position: absolute
+    top: 48px
+    background: $blue
+    width: 100%
+    max-height: 0
+    overflow: hidden
+    transition: max-height .3s linear
+
+    ul
+      margin: 0
+      padding: 0
+
+    li
+      list-style: none
+
+    a
+      display: block
+      padding: 16px
+      transition: background .3s ease
+
+      &:hover
+        background: $dark-blue
+  // End top blue block
+
+  // Middle block with logo, menu and search
+  .middle-b
+    padding-bottom: 24px
+
+    .logo
+      user-select: none
+
+    nav a, .search
+      color: $link-blue
+
+      &:hover
+        color: $orange
+
+    // main navigation
+    .list-inline li
+      margin-right: 32px
+
+    .search-b
+      justify-content: space-between
+      display: flex
+      align-items: center
+
+      .search
+        margin-right: 32px
+        display: flex
+        justify-content: center
+        align-items: center
+
+        img
+          margin-right: 8px
+
+    .btn-orange
+      color: #fff
+
+    .header-right-b
+      margin-top: 24px

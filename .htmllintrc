@@ -1,0 +1,21 @@
+{
+  "attr-bans": ["align", "background", "bgcolor", "border", "frameborder", "style", "width", "onclick", "onload"],
+  "attr-name-style": false,
+  "attr-no-dup": true,
+  "class-no-dup": true,
+  "class-style": false,
+  "head-req-title": true,
+  "html-req-lang": true,
+  "id-no-dup": true,
+  "id-class-style": false,
+  "input-req-label": true,
+  "img-req-alt": "allownull",
+  "label-req-for": true,
+  "line-end-style": false,
+  "tag-bans": ["style", "b", "font", "center", "s", "u", "strike"],
+  "tag-self-close": "never",
+  "tag-name-lowercase": true,
+  "tag-name-match": true,
+  "title-max-len": false,
+  "title-no-dup": true
+}
